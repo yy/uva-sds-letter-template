@@ -1,0 +1,78 @@
+\documentclass[12pt]{article} %{{{ 
+\usepackage[top=0.5in, bottom=0.5in, left=0.85in, right=0.5in, includefoot, footskip=20pt, showframe=false]{geometry}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{array}
+\usepackage{lipsum} % for filler text
+
+\definecolor{uvaorange}{RGB}{232,119,34}
+\definecolor{uvagray}{RGB}{128,128,128}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+\renewcommand{\familydefault}{\sfdefault}
+%}}}
+
+\begin{document}
+
+% UVA SDS logo at top-left, faded %{{{
+\begin{minipage}[t]{\textwidth}
+  \hspace*{-0.35in}
+  \transparent{0.5}\includegraphics[height=0.8in]{uva-sds-logo.pdf}
+\end{minipage}
+%}}}
+
+%{{{ contact information and date
+\begingroup
+\hfill
+\color{uvagray}
+\begin{tabular}{@{}r@{\hspace{0.5in}}r@{}}
+  \footnotesize 1919 Ivy Rd. & \footnotesize \textbf{P} 434.982.2600\\
+  \footnotesize PO Box 400249 & \texttt{xxx@virginia.edu} \\
+  \footnotesize Charlottesville, VA 22904 & \footnotesize \textcolor{uvaorange}{datascience.virginia.edu}
+\end{tabular}
+\endgroup
+
+\vspace{0.3in}
+
+\today{}
+%}}}
+
+% Recipient (inside address) %{{{
+\vspace{0.15in}
+\begin{tabular}{@{}l@{}}
+  \textbf{Recipient Name}\\
+  Title\\
+  Organization\\
+  Street Address\\
+  City, State ZIP\\
+\end{tabular}
+
+\bigskip %}}}
+
+%{{{ letter body
+To Whom It May Concern,
+
+\lipsum[1-2]
+%}}}
+
+%{{{ signature
+\bigskip
+
+\begin{tabular}{ @{} l }
+  Sincerely,\\
+  %\includegraphics[width=2.5in]{signature.png}\\
+  Your Name\\
+  Your Title\\
+  School of Data Science \\
+  University of Virginia 
+  \end{tabular}
+%}}}
+
+\end{document}

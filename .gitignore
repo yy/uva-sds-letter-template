@@ -1,0 +1,18 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex*
+*.toc
+
+# PDFs built locally
+*.pdf
+
+# Personal assets (do not commit)
+signature.png
