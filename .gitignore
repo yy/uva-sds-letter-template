@@ -16,3 +16,7 @@
 
 # Personal assets (do not commit)
 signature.png
+
+# agents
+AGENTS.md
+CLAUDE.md
